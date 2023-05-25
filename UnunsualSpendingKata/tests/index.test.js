@@ -1,13 +1,21 @@
-import {UserPayments} from '../src';
+import EmailSender from '../src/UserPayments';
 
 describe( 'Check for suspicious payments', () => {
     it('will return an email', () => {
-
-        const sut = new UserPayments();
+        const sut = new EmailSender();
 
         let expectedEmail = 'Hello User';
         
         expect(sut.sendEmail()).toBe(expectedEmail);
+    })
+
+    it('fetches current and previous month payments when provided with a user id', () => {
+        const sut = new PaymentFetcher()
         
+        const expectedPayments = new Payments()
+        expectedPayments.currentMonth = {entertainment: 5000}
+        expectedPayments.previousMonth = {entertainment: 6000}
+
+        expect(sut.fetchPayments(1)).toBe(expectedPayments)
     })
 })
