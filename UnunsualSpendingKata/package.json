@@ -1,0 +1,17 @@
+{
+  "name": "ununsualspendingkata",
+  "version": "1.0.0",
+  "description": "// Payment Object // Category Enumerable",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.5.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.21.5"
+  }
+}
