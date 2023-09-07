@@ -1,8 +1,8 @@
 class Payments{
 
     constructor(){
-        this.currentMonth = {entertainment: 5000};
-        this.previousMonth = {entertainment: 6000};
+        this.previousMonth = {entertainment: 6000, food: 500};
+        this.currentMonth = {entertainment: 5000, food: 1000};   
     }
         
 }
